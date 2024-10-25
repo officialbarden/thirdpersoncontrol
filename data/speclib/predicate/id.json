@@ -1,0 +1,27 @@
+{
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "target": "this",
+      "score": "speclib.id"
+    },
+    "range": {
+      "min": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "#id"
+        },
+        "score": "speclib.id"
+      },
+      "max": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "#id"
+        },
+        "score": "speclib.id"
+      }
+    }
+}
+  

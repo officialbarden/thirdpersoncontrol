@@ -1,1 +1,2 @@
-# speclibthirdpersoncontrol
+# speclib
+Spectate entities with freecam!
