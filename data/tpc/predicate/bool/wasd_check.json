@@ -1,0 +1,18 @@
+[
+    {
+      "condition": "minecraft:reference",
+      "name": "tpc:input/w"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "tpc:input/a"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "tpc:input/s"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "tpc:input/d"
+    }
+  ]

@@ -1,5 +1,5 @@
 {
     "values": [
-        "speclib:global/init"
+        "tpc:gb/load"
     ]
 }
