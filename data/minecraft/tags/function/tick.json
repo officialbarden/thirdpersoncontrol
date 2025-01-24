@@ -1,5 +1,6 @@
 {
     "values": [
-        "tpc:gb/loop"
+        "tpc:gb/loop",
+        "anims:gb/loop"
     ]
 }

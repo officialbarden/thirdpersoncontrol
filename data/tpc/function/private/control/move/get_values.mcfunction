@@ -64,7 +64,7 @@
 # JUMP
     data modify storage tpc:temp cache.vector_offset.y set value 0.0d
     $execute \
-        as @s[predicate=tpc:input/jump] \
+        as @s[predicate=tpc:input/jump,tag=!tpc.disabled_jump] \
         store result storage tpc:temp cache.vector_offset.y double 0.1 \
         run data get storage tpc:entities entity_type[{"name":"$(name)"}].movement.jump 1
     function tpc:private/control/move/jump with storage tpc:temp cache.vector_offset

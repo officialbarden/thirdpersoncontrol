@@ -1,5 +1,6 @@
 {
     "values": [
-        "tpc:gb/load"
+        "tpc:gb/load",
+        "anims:gb/init"
     ]
 }

@@ -1,9 +1,9 @@
 # IGNORE THAT Z-AXIS HAS "X" NAMED MACRO
 $data modify entity @s teleport_duration set value $(smoothness)
 
-$execute positioned ^ ^$(y) ^-$(x) if block ~ ~ ~ #air run return run tp @s ^ ^ ^-$(x)
-execute positioned ^ ^ ^-1 if block ~ ~ ~ #air run return run tp @s ^ ^ ^-1
-execute positioned ^ ^ ^-0.9 if block ~ ~ ~ #air run return run tp @s ^ ^ ^-0.9
+$execute positioned ^ ^$(y) ^-$(x) if block ~ ~ ~ #air run return run tp @s ^-0.5 ^ ^-$(x)
+execute positioned ^ ^ ^-1 if block ~ ~ ~ #air run return run tp @s ^-1 ^ ^-1
+execute positioned ^ ^ ^-0.9 if block ~ ~ ~ #air run return run tp @s ^-1 ^ ^-0.9
 execute positioned ^ ^ ^-0.8 if block ~ ~ ~ #air run return run tp @s ^ ^ ^-0.8
 execute positioned ^ ^ ^-0.7 if block ~ ~ ~ #air run return run tp @s ^ ^ ^-0.7
 execute positioned ^ ^ ^-0.6 if block ~ ~ ~ #air run return run tp @s ^ ^ ^-0.6
