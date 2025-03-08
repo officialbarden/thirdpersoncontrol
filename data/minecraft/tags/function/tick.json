@@ -1,6 +1,6 @@
 {
     "values": [
         "tpc:gb/loop",
-        "anims:gb/loop"
+        "camera:gb/tick"
     ]
 }

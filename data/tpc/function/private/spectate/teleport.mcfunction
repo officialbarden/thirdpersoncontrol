@@ -1,6 +1,6 @@
 data modify entity @s teleport_duration set value 0
 
-execute anchored feet positioned ^-0.1 ^0.5 ^-1.5 if block ~ ~ ~ #air run return run tp @s ^ ^0.5 ^-1.5
+execute anchored feet positioned ^ ^0.5 ^-1.5 if block ~ ~ ~ #air run return run tp @s ^ ^0.5 ^-1.5
 execute anchored feet positioned ^-0.1 ^ ^-1 if block ~ ~ ~ #air run return run tp @s ^ ^ ^-1
 execute anchored feet positioned ^ ^ ^-0.9 if block ~ ~ ~ #air run return run tp @s ^ ^ ^-0.9
 execute anchored feet positioned ^ ^ ^-0.8 if block ~ ~ ~ #air run return run tp @s ^ ^ ^-0.8
