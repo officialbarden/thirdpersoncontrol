@@ -1,7 +1,19 @@
+#> State Scores:
+# tpc.state = 1     Walking (tpc.state.walking)
+# tpc.state = 2     Sprinting (tpc.state.sprinting)
+# tpc.state = 3     Jumped (tpc.state.jumped)
+# tpc.state = 4     In_Air (tpc.state.in_air)
+# tpc.state = 5     Landed (tpc.state.landed)
+# tpc.state = 6     Walk + Crouching (tpc.state.crouching + tpc.state.walking)
+# tpc.state = 7     Sprint + Crouching (tpc.state.crouching + tpc.state.sprinting)
+# tpc.state = 8     Idle (tpc.state.idle)
+
+
 #> SCOREBOARDS
     scoreboard objectives add tpc.id dummy
     scoreboard objectives add tpc.extras dummy
     scoreboard objectives add tpc.math dummy
+    scoreboard objectives add tpc.state dummy
 
 #> INIT VALUES:
     scoreboard players add .global tpc.id 1
@@ -10,15 +22,11 @@
 #> DEFAULT VALUES:
     # Smoothness of Camera Movement:
     data modify storage tpc:config config.camera.teleport_duration set value 2
+    # Gamemode of Player in Camera:
+    data modify storage tpc:config config.camera.gamemode set value "spectator"
+    
     
     # Entity Camera Config List (NOTE: ALL Values are Scaled to 1/10th their value, so if you set the value to be, for eg: 10, then the value used will be 1.
     data modify storage tpc:entities entity_type set value [\
-        {"name":"creeper","type":"normal",camera:{walk:{x:10,y:10,z:-10},run:{x:10,y:10,z:10}},movement:{walk:2,run:4,jump:7}},\
-        {"name":"enderman","type":"tall",camera:{walk:{x:40,y:10,z:0},run:{x:44,y:10,z:10}},movement:{walk:1,run:6,jump:4}},\
-        {"name":"warden","type":"huge",camera:{walk:{x:40,y:10,z:0},run:{x:44,y:10,z:10}},movement:{walk:1,run:4,jump:5}},\
-        {"name":"ravager","type":"huge",camera:{walk:{x:20,y:20,z:0},run:{x:24,y:20,z:10}},movement:{walk:2,run:7,jump:5}},\
-        {"name":"bee","type":"tiny",camera:{walk:{x:10,y:1,z:0},run:{x:14,y:1,z:10}},movement:{walk:2,run:7,jump:4}},\
-        {"name":"allay","type":"tiny",camera:{walk:{x:10,y:10,z:0},run:{x:14,y:10,z:10}},movement:{walk:2,run:7,jump:4}},\
-        {"name":"villager","type":"normal",camera:{walk:{x:10,y:10,z:0},run:{x:14,y:10,z:10}},movement:{walk:2,run:3,jump:4}},\
-        {"name":"armor_stand","type":"normal",camera:{walk:{x:10,y:13,z:0},run:{x:12,y:13,z:0}},movement:{walk:1,run:3,jump:4}}\
+        {"name":"armor_stand","type":"normal",camera:{walk:{x:13,y:14,z:-3},run:{x:15,y:14,z:-3}},movement:{walk:1,run:3,jump:10,gravity:5}}\
     ]
