@@ -24,9 +24,6 @@ execute as @n[tag=tpc.controlled,predicate=tpc:id/common,predicate=!tpc:on_groun
 
 #> Walking Check
 execute as @s[predicate=!tpc:input/w] as @n[tag=tpc.controlled,predicate=tpc:id/common] run tag @s remove tpc.state.walking
-execute as @s[predicate=!tpc:input/a] as @n[tag=tpc.controlled,predicate=tpc:id/common] run tag @s remove tpc.state.walking
-execute as @s[predicate=!tpc:input/s] as @n[tag=tpc.controlled,predicate=tpc:id/common] run tag @s remove tpc.state.walking
-execute as @s[predicate=!tpc:input/d] as @n[tag=tpc.controlled,predicate=tpc:id/common] run tag @s remove tpc.state.walking
 
 execute as @s[predicate=tpc:input/w,predicate=!tpc:input/sprint] as @n[tag=tpc.controlled,predicate=tpc:id/common] run tag @s add tpc.state.walking
 execute as @s[predicate=tpc:input/a,predicate=!tpc:input/sprint] as @n[tag=tpc.controlled,predicate=tpc:id/common] run tag @s add tpc.state.walking
