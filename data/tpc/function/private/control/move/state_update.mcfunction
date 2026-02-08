@@ -10,8 +10,8 @@
 
 
 
-execute as @n[predicate=tpc:id/common,tag=tpc.controlled,tag=tpc.state.walking,tag=!tpc.state.crouching] run return run scoreboard players set @s tpc.state 1
 execute as @n[predicate=tpc:id/common,tag=tpc.controlled,tag=tpc.state.walking,tag=tpc.state.crouching] run return run scoreboard players set @s tpc.state 6
+execute as @n[predicate=tpc:id/common,tag=tpc.controlled,tag=tpc.state.walking,tag=!tpc.state.crouching] run return run scoreboard players set @s tpc.state 1
 execute as @n[predicate=tpc:id/common,tag=tpc.controlled,tag=tpc.state.sprinting,tag=!tpc.state.crouching] run return run scoreboard players set @s tpc.state 2
 execute as @n[predicate=tpc:id/common,tag=tpc.controlled,tag=tpc.state.sprinting,tag=tpc.state.crouching] run return run scoreboard players set @s tpc.state 7
 execute as @n[predicate=tpc:id/common,tag=tpc.controlled,tag=tpc.state.jumped] run return run scoreboard players set @s tpc.state 3
