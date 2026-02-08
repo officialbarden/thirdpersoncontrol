@@ -14,7 +14,8 @@
     scoreboard objectives add tpc.extras dummy
     scoreboard objectives add tpc.math dummy
     scoreboard objectives add tpc.state dummy
-
+    scoreboard objectives add tpc.MovementSpeed dummy
+    scoreboard objectives add tpc.JumpStrength dummy
 #> INIT VALUES:
     scoreboard players add .global tpc.id 1
 
@@ -38,5 +39,6 @@
     #                  - gravity = gravity (currently redundant)
 
     data modify storage tpc:entities entity_type set value [\
-        {"name":"armor_stand","type":"normal",camera:{walk:{x:13,y:14,z:-3},run:{x:15,y:14,z:-3}},movement:{walk:1,run:3,jump:10,gravity:5}}\
+        {"name":"armor_stand","type":"normal",camera:{walk:{x:13,y:14,z:-3},run:{x:15,y:14,z:-3}},movement:{walk:1,run:3,jump:10,gravity:5}},\
+        {"name":"mannequin","type":"normal",camera:{walk:{x:13,y:14,z:-3},run:{x:15,y:14,z:-3}},movement:{walk:1,run:3,jump:5,gravity:5}}\
     ]
