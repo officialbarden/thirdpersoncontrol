@@ -1,1 +1,0 @@
-$team remove tpc.$(ID)
