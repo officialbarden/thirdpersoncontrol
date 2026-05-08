@@ -1,0 +1,15 @@
+{
+    "criteria": {
+      "criteria": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "entity": {
+            "nbt": "{Tags:[\"tpc.controlled\"]}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "tpc:private/killed_puppet/1"
+    }
+}
